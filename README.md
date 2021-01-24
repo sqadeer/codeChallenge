@@ -3,6 +3,7 @@
 Coding_challenge.py contains a function called getLowTempSprd_Day that consumes a weather data file as input (such as w_data (5).dat). It returns the day with the smallest temperature spread.  Coding_challenge.py also contains another function named getMinGoalDif_Team that consumes a soccer team data file as input (such as soccer.dat) and returns the team with the smallest difference in 'for' and 'against' goals.
 
 In order to run this file you will need to install NumPy using:
+
 pip install numpy
 
 ## getLowTempSprd_Day
@@ -35,12 +36,19 @@ day_col: specifies which column number of the resulting array to store the colum
 getMinGoalDif_Team(filename, skipHeader, col_to_eval, regex, F_col, A_col, team_col)
 
 Gets the team with the smallest difference in 'for' and 'against' goals. The getMinGoalDif_Team function reads a file with soccer team data. After reading a line, it splits the data by whitespace into a data list, and evaluates whether that data list contains valid data. Evaluation is performed using the helper function is_data_list_valid. The data list is used to find the team with the smallest difference in 'for' and 'against' goals.
+
 filename: name of file to be consumed
+
 skipHeader: number of lines to skip at the beginning of the file
+
 col_to_eval: a column number from the data list to evaluate
+
 regex: a regular expression to evaluate the col_to_eval column in the data list
+
 F_col: the column number in the data list that stores the 'for' goals data 
+
 A_col: the column number in the data list that stores the 'against' goals data
+
 team_col: the column number in the data list that stores the team name data 
 
 ## is_data_list_valid 
@@ -48,8 +56,11 @@ team_col: the column number in the data list that stores the team name data
 is_data_list_valid(data_list, col_to_eval, regex)
 
 This a helper function that returns a bool value based on whether a given column of values in a data list matches a given regular expression pattern. 
+
 data_list: a list of data
+
 col_to_eval: the column number in the data_list to evaluate
+
 regex: a regular expression pattern
 
 ## Is the way you wrote the second program influenced by writing the first?
