@@ -5,7 +5,7 @@ Coding_challenge.py contains a function called getLowTempSprd_Day that consumes 
 In order to run this file you will need to install NumPy using:
 pip install numpy
 
-# getLowTempSprd_Day
+## getLowTempSprd_Day
 
 getLowTempSprd_Day(filename, d_type, skipHeader, skipFooter, useCols, conv_dict, MxT_col, MnT_col, day_col)
 
