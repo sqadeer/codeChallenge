@@ -8,9 +8,9 @@ pip install numpy
 
 ## getLowTempSprd_Day
 
-getLowTempSprd_Day(filename, d_type, skipHeader, skipFooter, useCols, conv_dict, MxT_col, MnT_col, day_col)
+Gets the day with the smallest temperature spread. The getLowTempSprd_Day function collects data from a file containing weather data and puts it into a data array. This data array is then used to get the day with the smallest temperature spread.
 
-Gets the day with the smallest temperature spread. The getLowTempSprd_Day function collects data from a file containing weather data and puts it into a data array. This data array is then used to get the day with the smallest temperature spread. 
+getLowTempSprd_Day(filename, d_type, skipHeader, skipFooter, useCols, conv_dict, MxT_col, MnT_col, day_col) 
 
 filename: name of file to be consumed
 
@@ -33,9 +33,9 @@ day_col: specifies which column number of the resulting array to store the colum
 
 ## getMinGoalDif_Team
 
-getMinGoalDif_Team(filename, skipHeader, col_to_eval, regex, F_col, A_col, team_col)
-
 Gets the team with the smallest difference in 'for' and 'against' goals. The getMinGoalDif_Team function reads a file with soccer team data. After reading a line, it splits the data by whitespace into a data list, and evaluates whether that data list contains valid data. Evaluation is performed using the helper function is_data_list_valid. The data list is used to find the team with the smallest difference in 'for' and 'against' goals.
+
+getMinGoalDif_Team(filename, skipHeader, col_to_eval, regex, F_col, A_col, team_col)
 
 filename: name of file to be consumed
 
@@ -53,9 +53,9 @@ team_col: the column number in the data list that stores the team name data
 
 ## is_data_list_valid 
 
-is_data_list_valid(data_list, col_to_eval, regex)
+This a helper function that returns a bool value based on whether a given column of values in a data list matches a given regular expression pattern.
 
-This a helper function that returns a bool value based on whether a given column of values in a data list matches a given regular expression pattern. 
+is_data_list_valid(data_list, col_to_eval, regex) 
 
 data_list: a list of data
 
