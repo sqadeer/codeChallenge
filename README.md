@@ -10,7 +10,9 @@ pip install numpy
 getLowTempSprd_Day(filename, d_type, skipHeader, skipFooter, useCols, conv_dict, MxT_col, MnT_col, day_col)
 
 Gets the day with the smallest temperature spread. The getLowTempSprd_Day function collects data from a file containing weather data and puts it into a data array. This data array is then used to get the day with the smallest temperature spread. 
+
 filename: name of file to be consumed
+
 d_type: tuple of data types for the resulting array
 skipHeader: number of lines to skip at the beginning of the file
 skipFooter: number of lines to skip at the end of the file
@@ -23,7 +25,7 @@ MxT_col: specifies which column number of the resulting array to store the colum
 MnT_col: specifies which column number of the resulting array to store the column of Minimum Temperature data
 day_col: specifies which column number of the resulting array to store the column of day number data
 
-# getMinGoalDif_Team
+## getMinGoalDif_Team
 
 getMinGoalDif_Team(filename, skipHeader, col_to_eval, regex, F_col, A_col, team_col)
 
@@ -36,7 +38,7 @@ F_col: the column number in the data list that stores the 'for' goals data
 A_col: the column number in the data list that stores the 'against' goals data
 team_col: the column number in the data list that stores the team name data 
 
-# is_data_list_valid 
+## is_data_list_valid 
 
 is_data_list_valid(data_list, col_to_eval, regex)
 
@@ -45,7 +47,7 @@ data_list: a list of data
 col_to_eval: the column number in the data_list to evaluate
 regex: a regular expression pattern
 
-# Is the way you wrote the second program influenced by writing the first?
+## Is the way you wrote the second program influenced by writing the first?
 Yes, both the first and second programs consume a file and store relevant data in a data structure such as a list or a numpy array. They iterate the data structure while keeping track of the most current smallest difference value found.
 
 Author of coding_challenge.py: Sarah Qadeer
