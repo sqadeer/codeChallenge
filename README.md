@@ -14,15 +14,20 @@ Gets the day with the smallest temperature spread. The getLowTempSprd_Day functi
 filename: name of file to be consumed
 
 d_type: tuple of data types for the resulting array
+
 skipHeader: number of lines to skip at the beginning of the file
+
 skipFooter: number of lines to skip at the end of the file
-useCols: tuple of column numbers from the file that indicate what data columns
-         should be stored in the resulting array
-conv_dict: dictionary where the keys are column numbers that are mapped to values that
-           are functions. The conv_dict is used to convert the column data using a given function. The converted column
-           data is then stored in the resulting array
+
+useCols: tuple of column numbers from the file that indicate what data columns should be stored in the resulting array
+
+conv_dict: dictionary where the keys are column numbers that are mapped to values that are functions. The conv_dict is used to convert the column data using a given function.  
+           The converted column data is then stored in the resulting array
+           
 MxT_col: specifies which column number of the resulting array to store the column of Maximum Temperature data
+
 MnT_col: specifies which column number of the resulting array to store the column of Minimum Temperature data
+
 day_col: specifies which column number of the resulting array to store the column of day number data
 
 ## getMinGoalDif_Team
