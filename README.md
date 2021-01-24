@@ -2,7 +2,7 @@
 
 Coding_challenge.py contains a function called getLowTempSprd_Day that consumes a weather data file as input (such as w_data (5).dat). It returns the day with the smallest temperature spread.  Coding_challenge.py also contains another function named getMinGoalDif_Team that consumes a soccer team data file as input (such as soccer.dat) and returns the team with the smallest difference in 'for' and 'against' goals.
 
-In order to run this file you will need to install NumPy using:
+In order to run this file you will need to install NumPy (a Python library) using:
 
 pip install numpy
 
